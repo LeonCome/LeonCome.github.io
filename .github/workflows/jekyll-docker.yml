@@ -1,3 +1,7 @@
+theme: jekyll-theme-minimal
+title: My Homepage
+description: For daily notes
+
 name: Jekyll site CI
 
 on:
