@@ -1,34 +1,42 @@
-body,
-html {
+/* 在 water.css 中添加或修改 */
+
+body, html {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
-    overflow: hidden;
+    overflow: hidden; /* 确保背景全屏显示，不会有滚动条 */
 }
 
-/* 确保背景全屏显示，不会有滚动条 */
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* 确保背景在最底层 */
+}
+
 .edging {
     width: 600px;
     height: 800px;
     border: 30px solid #666;
-    position: relative;
+    position: absolute;
     background-color: #fafafa;
     overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .water {
     width: 50px;
     height: 50px;
-    position: relative;
+    position: absolute;
     border-radius: 50%;
     box-shadow: -2px 8px 3px -4px #fff,
-        -3px 16px 8px 0 #444,
-        -2px 14px 14px #666 inset;
-    position: absolute;
-    top: 230px;
-    left: 230px;
-    z-index: 20;
+                -3px 16px 8px 0 #444,
+                -2px 14px 14px #666 inset;
 }
 
 .water1 {
@@ -65,13 +73,11 @@ html {
     left: -16px;
     background-color: #ccc;
     transform: rotate(-10deg);
-    z-index: 10;
 }
 
 .content {
     position: relative;
-    z-index: 1;
-    /* 确保内容显示在背景的上层 */
+    z-index: 1; /* 确保内容显示在背景的上层 */
     max-width: 800px;
     margin: 50px auto;
     padding: 20px;
