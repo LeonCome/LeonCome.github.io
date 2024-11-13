@@ -1,0 +1,59 @@
+.edging {
+    width: 600px;
+    height: 800px;
+    border: 30px solid #666;
+    position: relative;
+    background-color: #fafafa;
+    overflow: hidden;
+}
+
+.water {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border-radius: 50%;
+    box-shadow: -2px 8px 3px -4px #fff,
+        -3px 16px 8px 0 #444,
+        -2px 14px 14px #666 inset;
+    position: absolute;
+    top: 230px;
+    left: 230px;
+    z-index: 20;
+}
+
+.water1 {
+    top: 100px;
+    left: 100px;
+}
+
+.water2 {
+    top: 200px;
+    left: 200px;
+}
+
+.water3 {
+    top: 300px;
+    left: 300px;
+}
+
+.gaoliang {
+    background-color: #fff;
+    width: 4px;
+    height: 8px;
+    position: absolute;
+    top: 9px;
+    right: 22px;
+    transform: rotate(106deg);
+    border-radius: 2px;
+}
+
+.box {
+    width: 675px;
+    height: 600px;
+    position: absolute;
+    top: 413px;
+    left: -16px;
+    background-color: #ccc;
+    transform: rotate(-10deg);
+    z-index: 10;
+}
